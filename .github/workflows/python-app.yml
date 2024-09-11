@@ -123,6 +123,23 @@ mot = "bonjour"
 mot_inverse = mot_a_l_envers(mot)
 print(mot_inverse)  # Affiche "ruojnob"
 
+Exercice 12
+
+def est_palindrome(n):
+    """Détermine si un nombre entier est un palindrome."""
+    # Convertir le nombre en chaîne de caractères
+    n_str = str(n)
+    
+    # Comparer la chaîne avec sa version inversée
+    return n_str == n_str[::-1]
+
+# Exemple d'utilisation
+nombre = 12321
+print(f"{nombre} est un palindrome : {est_palindrome(nombre)}")  # Affiche True
+
+nombre = 12345
+print(f"{nombre} est un palindrome : {est_palindrome(nombre)}")  # Affiche False
+
 Exercice 13
 
 def fibonacci(n):
