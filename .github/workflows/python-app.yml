@@ -122,3 +122,24 @@ def mot_a_l_envers(mot):
 mot = "bonjour"
 mot_inverse = mot_a_l_envers(mot)
 print(mot_inverse)  # Affiche "ruojnob"
+
+Exercice 13
+
+def fibonacci(n):
+    """Affiche les n premiers termes de la suite de Fibonacci."""
+    if n <= 0:
+        print("Le nombre de termes doit être positif.")
+        return
+    
+    a, b = 0, 1
+    
+    # Affichage des termes
+    for _ in range(n):
+        print(a, end=' ')
+        a, b = b, a + b
+    print()  
+
+# Exemple d'utilisation
+n = 10  # Nombre de termes à afficher
+fibonacci(n)
+
