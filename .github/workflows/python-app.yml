@@ -114,3 +114,11 @@ def ont_une_valeur_commune(liste1, liste2):
     # Si l'intersection n'est pas vide, les listes ont des valeurs communes
     return len(intersection) > 0
 
+EXERCICE 11
+
+def mot_a_l_envers(mot):
+    return mot[::-1]
+
+mot = "bonjour"
+mot_inverse = mot_a_l_envers(mot)
+print(mot_inverse)  # Affiche "ruojnob"
