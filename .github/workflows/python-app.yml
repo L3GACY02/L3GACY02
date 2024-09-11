@@ -38,7 +38,7 @@ jobs:
       run: |
         pytest
 
-        #Exercice 9.1
+        EXERCICE 9.1
 
 import random
 
@@ -55,7 +55,7 @@ plus_petit = mini(liste)
 print(f"La liste générée est : {liste}")
 print(f"Le plus petit élément est : {plus_petit}")
 
-#9.2
+    EXERCICE 9.2
 
 import random
 
@@ -76,7 +76,7 @@ indice_min = min2(liste)
 print(f"La liste générée est : {liste}")
 print(f"L'indice de la première occurrence du plus petit élément est : {indice_min}")
 
-#9.3
+     EXERCICE 9.3
 
 import random
 
@@ -114,7 +114,7 @@ def ont_une_valeur_commune(liste1, liste2):
     # Si l'intersection n'est pas vide, les listes ont des valeurs communes
     return len(intersection) > 0
 
-EXERCICE 11
+      EXERCICE 11
 
 def mot_a_l_envers(mot):
     return mot[::-1]
@@ -123,7 +123,7 @@ mot = "bonjour"
 mot_inverse = mot_a_l_envers(mot)
 print(mot_inverse)  # Affiche "ruojnob"
 
-Exercice 12
+      Exercice 12
 
 def est_palindrome(n):
     """Détermine si un nombre entier est un palindrome."""
@@ -140,7 +140,7 @@ print(f"{nombre} est un palindrome : {est_palindrome(nombre)}")  # Affiche True
 nombre = 12345
 print(f"{nombre} est un palindrome : {est_palindrome(nombre)}")  # Affiche False
 
-Exercice 13
+    Exercice 13
 
 def fibonacci(n):
     """Affiche les n premiers termes de la suite de Fibonacci."""
