@@ -55,6 +55,52 @@ plus_petit = mini(liste)
 print(f"La liste générée est : {liste}")
 print(f"Le plus petit élément est : {plus_petit}")
 
+#9.2
+
+import random
+
+def min2(L):
+    """Retourne l'indice de la première occurrence du plus petit élément de la liste L."""
+    if not L:  
+        return None
+    min_value = min(L) 
+    return L.index(min_value) 
+
+# Générer une liste de 100 entiers aléatoires entre 1 et 1000
+liste = [random.randint(1, 1000) for _ in range(100)]
+
+# Trouver l'indice de la première occurrence du plus petit élément
+indice_min = min2(liste)
+
+
+print(f"La liste générée est : {liste}")
+print(f"L'indice de la première occurrence du plus petit élément est : {indice_min}")
+
+#9.3
+
+import random
+
+def min3(L):
+    """Retourne la liste des indices de toutes les occurrences du plus petit élément de la liste L."""
+    if not L:  # Gérer le cas où la liste est vide
+        return []
+    
+    min_value = min(L)  # Trouver le plus petit élément
+    indices = [i for i, value in enumerate(L) if value == min_value]  # Trouver tous les indices du plus petit élément
+    
+    return indices
+
+# Générer une liste de 100 entiers aléatoires entre 1 et 1000
+liste = [random.randint(1, 1000) for _ in range(100)]
+
+# Trouver la liste des indices du plus petit élément
+indices_min = min3(liste)
+
+# Afficher la liste et les indices du plus petit élément
+print(f"La liste générée est : {liste}")
+print(f"Les indices de la plus petite valeur sont : {indices_min}")
+
+
       Exercice 10
 
 def ont_une_valeur_commune(liste1, liste2):
