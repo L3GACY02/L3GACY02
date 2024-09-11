@@ -160,3 +160,47 @@ def fibonacci(n):
 n = 10  # Nombre de termes à afficher
 fibonacci(n)
 
+Exercice 14
+
+import math
+
+mon_dico = {
+    "A": (1, 3),
+    "B": (-5, 6),
+    "C": (2, 8)
+}
+
+# Ajouter le point D
+mon_dico["D"] = (-2, 5)
+
+print(mon_dico)
+
+# Récupérer l'abscisse du point B
+abscisse_B = mon_dico["B"][0]
+
+print(abscisse_B)
+
+# Récupérer l'ordonnée du point D
+ordonnee_D = mon_dico["D"][1]
+
+print(ordonnee_D)
+
+
+# Coordonnées des points A et C
+A = (1, 3)
+C = (2, 8)
+
+# Calculer la distance AC
+distance_AC = math.sqrt((C[0] - A[0])**2 + (C[1] - A[1])**2)
+
+print(distance_AC)
+
+# Coordonnées des points B et D
+B = (-5, 6)
+D = (-2, 5)
+
+# Calculer les coordonnées du milieu M
+milieu_BD = ((B[0] + D[0]) / 2, (B[1] + D[1]) / 2)
+
+print(milieu_BD)
+
