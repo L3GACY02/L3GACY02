@@ -38,7 +38,7 @@ jobs:
       run: |
         pytest
 
-        #Exercice 9
+        #Exercice 9.1
 
 import random
 
@@ -54,3 +54,17 @@ plus_petit = mini(liste)
 
 print(f"La liste générée est : {liste}")
 print(f"Le plus petit élément est : {plus_petit}")
+
+      Exercice 10
+
+def ont_une_valeur_commune(liste1, liste2):
+    # Convertir les listes en ensembles
+    ensemble1 = set(liste1)
+    ensemble2 = set(liste2)
+    
+    # Vérifier s'il existe une intersection entre les deux ensembles
+    intersection = ensemble1 & ensemble2
+    
+    # Si l'intersection n'est pas vide, les listes ont des valeurs communes
+    return len(intersection) > 0
+
