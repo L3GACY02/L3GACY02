@@ -86,7 +86,10 @@ def min3(L):
         return []
     
     min_value = min(L)  # Trouver le plus petit élément
-    indices = [i for i, value in enumerate(L) if value == min_value]  # Trouver tous les indices du plus petit élément
+    indices= []
+    for i in range (len(L)):
+        if min_value==L[i]:
+            indices.append(i) # Trouver tous les indices du plus petit élément
     
     return indices
 
@@ -99,6 +102,8 @@ indices_min = min3(liste)
 # Afficher la liste et les indices du plus petit élément
 print(f"La liste générée est : {liste}")
 print(f"Les indices de la plus petite valeur sont : {indices_min}")
+
+
 
 
       Exercice 10
